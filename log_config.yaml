@@ -1,0 +1,40 @@
+
+version: 1
+disable_existing_loggers: False
+
+formatters:
+    simple:
+        format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        datefmt: '%Y-%m-%d %H:%M:%S'
+    verbose:
+        format: "%(asctime)s - %(name)s - %(levelname)s - %(filename)s - %(funcName)s:%(lineno)d - %(message)s"
+        datefmt: '%Y-%m-%d %H:%M:%S'
+
+
+handlers:
+    console:
+        class: logging.StreamHandler # https://docs.python.org/3/library/logging.handlers.html#streamhandler
+        level: DEBUG
+        formatter: simple
+        stream: ext://sys.stdout
+    file:
+        class: logging.handlers.TimedRotatingFileHandler # https://docs.python.org/3/library/logging.handlers.html#rotatingfilehandler
+        formatter: verbose
+        when: midnight
+        backupCount: 30
+        filename: dependency_template.log
+        '.':
+            suffix: '%Y-%m-%d'
+
+loggers:
+    dev:
+        level: DEBUG
+        handlers: [file]
+        propagate: no # this is similar to `raise` which will push the message to parent logs
+    prd:
+        level: INFO
+        handlers: [file]
+        propagate: no
+
+
+

@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: hal_positive_surprise
+Version: 1.0.2
+Summary: Positive Surprise Offer Personalization Engine
+Author-email: Elias Attias <EAttias@HollandAmerica.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML>=6.0.1
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pandas==2.2.2
+Requires-Dist: et-xmlfile==1.1.0
+Requires-Dist: openpyxl==3.1.5
+
+# Holland America Positive Surpsie Offers Engine
+
+Positive Surprise project aims to develop a predictive model that recommends best-matched gifts and positive surprises to guests. The goal is to enhance personalization and onboard user experience by leveraging advanced algorithms for gift recommendations
+
+## Installation
+
+Clone Repository
+
+```bash
+git clone https://halprdgit01.hq.halw.com:8443/
+
+pip install git+https://halprdgit01.hq.halw.com:8443/scm/gc/hal_positive_surprise.git (Recommend to virtual environment)
+```
+
+## Contributing
+
+For any questions, please contact Elias Attias (EAttias@HollandAmerica.com)
+
+## License
+
+[HAL](https://www.hollandamerica.com/en/us)

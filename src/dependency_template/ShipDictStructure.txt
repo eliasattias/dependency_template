@@ -1,0 +1,15 @@
+# Example 'ships' dictionary with the structure (ship_name, sail_date) as keys and links as part of the values
+ships = {
+    ("Noordam", datetime(2024, 9, 15)): {
+        "links": {
+            "Spa": "http://example.com/spa",
+            "Cabin": "http://example.com/cabin"
+        }
+    },
+    ("Eurodam", datetime(2024, 9, 20)): {
+        "links": {
+            "Dining": "http://example.com/dining",
+            "Casino": "http://example.com/casino"
+        }
+    }
+}
