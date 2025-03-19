@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dependency_template
+Version: 1.0.2
+Summary: Dependency Template
+Author-email: Elias Attias <attiaselias@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML>=6.0.1
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pandas==2.2.2
+Requires-Dist: et-xmlfile==1.1.0
+Requires-Dist: openpyxl==3.1.5
+
+# Dependency Template
+
+Template Description
+
+## Installation
+
+Clone Repository
+
+```bash
+git clone path
+
+pip install git+path (Recommend to virtual environment)
+```
+
+## Contributing
+
+For any questions, please contact Elias Attias (attiaselias@gmail.com)
+
+## License
+
+Elias Attias
